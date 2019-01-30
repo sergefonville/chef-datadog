@@ -18,6 +18,9 @@ instances:
     <% unless i['service_whitelist'].nil? %>
     service_whitelist: <%= i['service_whitelist'] %>
     <% end %>
+    <% unless i['max_services'].nil? %>
+    max_services: <%= i['max_services'] %>
+    <% end %>
     <% if i.key?('tags') && !i['tags'].empty? -%>
     tags:
       <% i['tags'].each do |t| -%>
